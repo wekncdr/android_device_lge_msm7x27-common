@@ -21,7 +21,7 @@ include device/qcom/msm7x27/BoardConfigCommon.mk
 include device/lge/msm7x27-common/BoardConfigRecovery.mk
 
 ## TLS register
-ARCH_ARM_HAVE_TLS_REGISTER   := true
+ARCH_ARM_HAVE_TLS_REGISTER   := false
 
 ## Boot loader
 TARGET_BOOTANIMATION_PRELOAD := true
@@ -112,9 +112,6 @@ BOARD_USE_LEGACY_TOUCHSCREEN := true
 
 ## Minimal fonts
 SMALLER_FONT_FOOTPRINT := true
-
-## Browser & WebKit
-ENABLE_WEBGL := true
 
 ## OTA script extras file (build/tools/releasetools)
 TARGET_OTA_EXTRAS_FILE := device/lge/msm7x27-common/releasetools/extras.txt
